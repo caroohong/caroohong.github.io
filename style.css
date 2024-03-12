@@ -89,16 +89,31 @@ body {
     background-color: 	#dd464e;
     box-shadow: 2px 2px 20px rgba(255,111,105,0.5);
 }
-.skill-table {
+#skill-table {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-top: 1px;
     width: 30%;
+    /* border:  2px solid #b9bb55; */
+    /* padding: 6px; */
+    vertical-align: middle;
+    /* box-sizing: border-box; */
+    /* display:table; */
+    border-collapse: collapse;
+    /* border-spacing: 1px; */
+}
+#skill-table td, #skill-table th {
     border:  2px solid #b9bb55;
     padding: 6px;
-    vertical-align: middle;
-    box-sizing: border-box;
-    display:table;
-    border-collapse: separate;
-    border-spacing: 1px;
+    height: 25px;
+}
+#skill-table tr:nth-child(even) {
+    background-color: #00000010;
+}
+#skill-table tr:hover {
+    background-color: rgba(0, 0, 0, 0.205);
+}
+#skill-table th {
+    background-color: #b9bb55;
 }
 .name {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
@@ -107,17 +122,10 @@ body h2 {
     background-color: #0e9aa7;
     color: white;
 }
-table {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-th {
+/* th {
     font-weight: bold;
     
 }
 td {
     border: 1px solid #b9bb55;
-    height: 25px;
-}
-table th {
-    background-color: #b9bb55;
-}
+} */
