@@ -17,7 +17,7 @@ body {
     background-color: #ffcb5cab;
 }
 .light-mode {
-    background-color: white;
+    background-color: rgb(245, 245, 245);
     color: rgb(63, 50, 73);
 }
 .dark-mode {
@@ -95,7 +95,7 @@ body {
 }
 #skill-table {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-top: 1px;
+    /* margin-top: 1px; */
     width: 30%;
     /* border:  2px solid #b9bb55; */
     /* padding: 6px; */
@@ -106,7 +106,7 @@ body {
     /* border-spacing: 1px; */
 }
 #skill-table td, #skill-table th {
-    border:  2px solid #b9bb55;
+    border: 2px solid #b9bb55;
     padding: 6px;
     height: 25px;
 }
@@ -133,10 +133,3 @@ body h2 {
 body h2:hover {
     background-color: #0e9aa7b2;
 }
-/* th {
-    font-weight: bold;
-    
-}
-td {
-    border: 1px solid #b9bb55;
-} */
