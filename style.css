@@ -11,6 +11,10 @@ body {
     color: white;
     background-color: #ffcc5c;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    transition: background-color 0.3s ease-in-out;
+}
+.about-me:hover {
+    background-color: #ffcb5cab;
 }
 .light-mode {
     background-color: white;
@@ -121,6 +125,13 @@ body {
 body h2 {
     background-color: #0e9aa7;
     color: white;
+    height: 38px;
+    vertical-align: middle;
+    padding-top: 10px;
+    transition: background-color 0.2s ease-in-out;
+}
+body h2:hover {
+    background-color: #0e9aa7b2;
 }
 /* th {
     font-weight: bold;
