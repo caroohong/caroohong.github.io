@@ -1,1 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>caroohong.github.io</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body class="light-mode">
+    <h1 class="about-me">About Me</h1>
+    <label for="toggle">Chose a theme (light/dark)</label>
+    <input class= "light-mode" type="text" id="toggle">
+    <button class="light-dark-button" onclick="toggleMode()">Change Theme</button>
+    <script>
+        function toggleMode() {
+            var toggle = document.getElementById("toggle").value.toLowerCase();
+            var body = document.body;
+            var input = document.getElementById("toggle");
+            if (toggle === "dark") {
+                body.classList.remove("light-mode");
+                body.classList.add("dark-mode");
+                input.classList.remove("light-mode");
+                input.classList.add("dark-mode");
+                
+            } else if (toggle === "light") {
+                body.classList.remove("dark-mode");
+                body.classList.add("light-mode");
+                input.classList.remove("dark-mode");
+                input.classList.add("light-mode");
+            } else {
+                alert("Invalid theme, please choose between light or dark.");
+            }
+        }
+    </script>
+    <h2 class="name">Carolina Hong</h2>
+    <p>
+        Currently a student at Universidad de los Andes pursuing 
+        Civil Engineering in Computer Science.
+    </p>
+    <!-- <img src="images/moon.png" id="icon"> -->
+    <ul>
+        <li>Year of University Enrollment: 2021</li>
+        <li>Birth Date: 19 June, 2003</li>
+    </ul>
 
+    <h2>Socials</h2>
+    <!-- <a href="https://github.com/caroohong">Github</a> -->
+    <button class="github-button" id="git" onclick="abrirEnlace('https://github.com/caroohong')">Github</button>
+    <button class="linked-button" id = "linked" onclick="abrirEnlace('https://www.linkedin.com/in/carolina-hong-89752129a/')">LinkedIn</button>
+    <script>
+        function abrirEnlace(enlace) {
+            window.open(enlace, '_blank');
+        }
+    </script>
+    <h2>Skills</h2>
+    <table class="skill-table">
+        <thead>
+            <tr>
+                <th>Skill</th>
+                <th>Level</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Python</td>
+                <td>Expert</td>
+            </tr>
+            <tr>
+                <td>JavaScript</td>
+                <td>Basic</td>
+            </tr>
+            <tr>
+                <td>HTML/CSS</td>
+                <td>Basic</td>
+            </tr>
+            <tr>
+                <td>Excel</td>
+                <td>Advanced</td>
+            </tr>
+            <tr>
+                <td>SQL</td>
+                <td>Expert</td>
+            </tr>
+            <tr>
+                <td>C/C++</td>
+                <td>Advanced</td>
+            </tr>
+            <tr>
+                <td>Word</td>
+                <td>Advanced</td>
+            </tr>
+            <tr>
+                <td>PowerPoint</td>
+                <td>Advanced</td>
+            </tr>
+        </tbody>
+    </table>
+    <h2>Contact</h2>
+    <ul>
+        <li>caro.hongy@gmail.com</li>
+        <li>+56982365327</li>
+    </ul>
+</body>
+</html>

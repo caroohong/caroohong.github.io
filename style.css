@@ -1,0 +1,123 @@
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    color:rgb(63, 50, 73);
+    transition: background-color 0.5s ease;
+    
+}
+.about-me {
+    font-size:40px;
+    line-height: 1.5;
+    color: white;
+    background-color: #ffcc5c;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.light-mode {
+    background-color: white;
+    color: rgb(63, 50, 73);
+}
+.dark-mode {
+    background-color: rgb(62, 56, 66);
+    color: rgb(230, 230, 230);
+}
+.github-button {
+    background-color: #b9bb55;
+    color: white;
+    border:none;
+    height: 36px;
+    width: 74px;
+    border-radius:18px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor:pointer;
+    transition: background-color 0.15s,
+    box-shadow 0.15s;
+}
+
+.github-button:hover {
+    background-color: 	rgb(148, 150, 50);
+    box-shadow: 2px 2px 20px rgba(184, 140, 214,0.5);
+}
+
+.linked-button {
+    background-color: #7dcaa6;
+    color: white;
+    border:none;
+    height: 36px;
+    width: 74px;
+    border-radius:18px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor:pointer;
+    transition: background-color 0.15s,
+    box-shadow 0.15s;
+}
+
+.linked-button:hover {
+    background-color: 	rgb(99, 166, 134);
+    box-shadow: 2px 2px 20px rgba(99, 166, 134,0.5);
+}
+#toggle {
+    width: 20%;
+    border-color: rgb(190, 137, 58);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 2px;
+    height: 25px;
+    transition: width 0.5s ease-in-out, background-color 0.15s;
+    outline: none;
+}
+#toggle:focus {
+    border: 3px solid rgb(190, 137, 58);
+    width:25%;
+}
+.light-dark-button {
+    background-color: 	#ff6f69;
+    color: white;
+    border:none;
+    height: 36px;
+    width: 150px;
+    border-radius:18px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor:pointer;
+    transition: background-color 0.15s,
+    box-shadow 0.15s;
+}
+
+.light-dark-button:hover {
+    background-color: 	#dd464e;
+    box-shadow: 2px 2px 20px rgba(255,111,105,0.5);
+}
+.skill-table {
+    margin-top: 1px;
+    width: 30%;
+    border:  2px solid #b9bb55;
+    padding: 6px;
+    vertical-align: middle;
+    box-sizing: border-box;
+    display:table;
+    border-collapse: separate;
+    border-spacing: 1px;
+}
+.name {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+body h2 {
+    background-color: #0e9aa7;
+    color: white;
+}
+table {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+th {
+    font-weight: bold;
+    
+}
+td {
+    border: 1px solid #b9bb55;
+    height: 25px;
+}
+table th {
+    background-color: #b9bb55;
+}
