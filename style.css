@@ -3,9 +3,11 @@ body {
     font-size: 15px;
     color:rgb(86, 69, 99);
     transition: background-color 0.5s ease;
-    
 }
 body h2 {
+    font-family:"Spectral", Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    padding-left: 1rem;
     background-color: #fcb61fa6;
     color: white;
     height: 38px;
@@ -16,37 +18,55 @@ body h2 {
 body h2:hover {
     background-color: #fcb61f75;
 }
+/* ABOUT ME */
 .about-me {
+    padding-left: 1rem;
     font-size:40px;
     line-height: 1.5;
     color: white;
     background-color: #fd5619bd;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-family: "Barlow", Verdana, Geneva, Tahoma, sans-serif;
     transition: background-color 0.3s ease-in-out;
     
 }
 .about-me:hover {
     background-color: #fd561986;
 }
+/* BACKGROUNDS  */
 .light-mode {
-    background-color: rgb(245, 245, 245);
-    color: rgb(63, 50, 73);
+    background-color: #f5f5f5;
+    color: #303952;
 }
 .dark-mode {
-    background-color: rgb(62, 56, 66);
+    background-color: #3a3c42;
     color: rgb(230, 230, 230);
 }
-.github-button {
-    background-color: #786fa6;
+/* BUTTONS  */
+button {
+    font-family: "Lato";
+    text-transform: uppercase;
+}
+.pill {
+    padding: .5em 1em;
+    padding-top: 0.6em;
+    padding-bottom: 0.6em;
     color: white;
     border:none;
-    height: 36px;
-    width: 74px;
-    border-radius:18px;
+    border-radius:1em;
     font-weight: bold;
     font-size: 15px;
     cursor:pointer;
     transition: all 0.15s ease;
+}
+.pill:hover {
+    box-shadow: 2px 2px 20px #00000033;
+    transform: scale(1.02);
+}
+/* - GITHUB  */
+.github-button {
+    background-color: #786fa6;
 }
 
 .github-button:hover {
@@ -54,19 +74,9 @@ body h2:hover {
     background-color: 	#574b90;
     box-shadow: 2px 2px 20px #00000033;
 }
-
+/* - LINKEDIN  */
 .linked-button {
-    margin-left: .5rem;
     background-color: #3dc1d3;
-    color: white;
-    border:none;
-    height: 36px;
-    width: 74px;
-    border-radius:18px;
-    font-weight: bold;
-    font-size: 15px;
-    cursor:pointer;
-    transition: all 0.15s ease;
 }
 
 .linked-button:hover {
@@ -74,6 +84,17 @@ body h2:hover {
     box-shadow: 2px 2px 20px #00000033;
     transform: scale(1.02);
 }
+ /*- CHANGE THEME  */
+.light-dark-button {
+    background-color: 	#ff6f69;
+}
+
+.light-dark-button:hover {
+    background-color: 	#dd464e;
+    box-shadow: 2px 2px 20px #00000033;
+    transform: scale(1.02);
+}
+/* - TEXT INPUT  */
 #toggle {
     width: 20%;
     border-color: rgb(190, 137, 58);
@@ -88,24 +109,7 @@ body h2:hover {
     border: 2px solid rgb(190, 137, 58);
     width:25%;
 }
-.light-dark-button {
-    background-color: 	#ff6f69;
-    color: white;
-    border:none;
-    height: 36px;
-    width: 150px;
-    border-radius:18px;
-    font-weight: bold;
-    font-size: 15px;
-    cursor:pointer;
-    transition: all 0.15s ease;
-}
-
-.light-dark-button:hover {
-    background-color: 	#dd464e;
-    box-shadow: 2px 2px 20px #00000033;
-    transform: scale(1.02);
-}
+/* TABLE  */
 #skill-table {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     left: 50%;
@@ -119,6 +123,7 @@ body h2:hover {
     border-collapse: collapse;
     box-shadow: 2px 2px 2px rgba(0,0,0,0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
 }
+/* TABLE DATA, TABLE HEADING  */
 #skill-table td, #skill-table th {
     padding:6px;
     padding-left: 15px;
@@ -127,21 +132,25 @@ body h2:hover {
     border-bottom: 1px solid #ddd;
     
 }
+/* TABLE EVEN ROWS */
 #skill-table tr:nth-child(even) {
     background-color: #00000010;
 }
+/* TABLE ROWS  */
 #skill-table tr {
     transition: all 0.15s ease-in;
     cursor: pointer;
 }
+/* TABLE ROW HOVER  */
 #skill-table tr:hover {
     background-color: rgba(0, 0, 0, 0.205);
     transform: scale(1.02);
     box-shadow: 2px 2px 2px rgba(0,0,0,0.1), -1px -1px 8px rgba(0, 0, 0, 0.1);
 }
+/* TABLE HEADING  */
 #skill-table th {
     background-color: #3dc1d3;
 }
-.name {
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-}
+
+
+
