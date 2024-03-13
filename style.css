@@ -116,13 +116,13 @@ body {
     background-color: #00000010;
 }
 #skill-table tr {
-    transition: all 0.2s ease-in;
+    transition: all 0.15s ease-in;
     cursor: pointer;
 }
 #skill-table tr:hover {
     background-color: rgba(0, 0, 0, 0.205);
     transform: scale(1.02);
-    box-shadow: 2px 2px 2px rgba(0,0,0,0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.1), -1px -1px 8px rgba(0, 0, 0, 0.1);
 }
 #skill-table th {
     background-color: #b9bb55;
