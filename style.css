@@ -34,11 +34,11 @@ body {
     font-weight: bold;
     font-size: 15px;
     cursor:pointer;
-    transition: background-color 0.15s,
-    box-shadow 0.15s;
+    transition: all 0.15s ease;
 }
 
 .github-button:hover {
+    transform: scale(1.02);
     background-color: 	rgb(148, 150, 50);
     box-shadow: 2px 2px 20px rgba(184, 140, 214,0.5);
 }
@@ -53,13 +53,13 @@ body {
     font-weight: bold;
     font-size: 15px;
     cursor:pointer;
-    transition: background-color 0.15s,
-    box-shadow 0.15s;
+    transition: all 0.15s ease;
 }
 
 .linked-button:hover {
     background-color: 	rgb(99, 166, 134);
     box-shadow: 2px 2px 20px rgba(99, 166, 134,0.5);
+    transform: scale(1.02);
 }
 #toggle {
     width: 20%;
@@ -85,13 +85,13 @@ body {
     font-weight: bold;
     font-size: 15px;
     cursor:pointer;
-    transition: background-color 0.15s,
-    box-shadow 0.15s;
+    transition: all 0.15s ease;
 }
 
 .light-dark-button:hover {
     background-color: 	#dd464e;
     box-shadow: 2px 2px 20px rgba(255,111,105,0.5);
+    transform: scale(1.02);
 }
 #skill-table {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
