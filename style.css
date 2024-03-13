@@ -64,6 +64,15 @@ button {
     box-shadow: 2px 2px 20px #00000033;
     transform: scale(1.02);
 }
+/* ABOUT ME  */
+.about-me-button {
+    background-color: #786fa6;
+}
+.about-me-button:hover {
+    transform: scale(1.02);
+    background-color: 	#574b90;
+    box-shadow: 2px 2px 20px #00000033;
+}
 /* - GITHUB  */
 .github-button {
     background-color: #786fa6;
