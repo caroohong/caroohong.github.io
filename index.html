@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:wght@400;700;900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Spectral&display=swap" rel="stylesheet">
 </head>
 <body class="light-mode">
-    <h1 class="about-me">About Me</h1>
+    <h1 class="about-me animated-bright glass">About Me</h1>
     <label for="toggle">Chose a theme (light/dark)</label>
     <input placeholder="Enter theme" class= "light-mode" type="text" id="toggle">
     <button class="light-dark-button pill" onclick="toggleMode()">Change Theme</button>
@@ -19,24 +19,37 @@
         function toggleMode() {
             var toggle = document.getElementById("toggle").value.toLowerCase();
             var body = document.body;
+            var h1 = document.querySelector("h1");
+            var h2s = document.querySelectorAll("h2");
             var input = document.getElementById("toggle");
             if (toggle === "dark") {
                 body.classList.remove("light-mode");
                 body.classList.add("dark-mode");
                 input.classList.remove("light-mode");
                 input.classList.add("dark-mode");
-                
+                h1.classList.remove("animated-bright");
+                h1.classList.add("animated-dark");
+                h2s.forEach(function(h2) {
+                    h2.classList.remove("animated-bright");
+                    h2.classList.add("animated-dark");
+                });
             } else if (toggle === "light") {
                 body.classList.remove("dark-mode");
                 body.classList.add("light-mode");
                 input.classList.remove("dark-mode");
                 input.classList.add("light-mode");
+                h1.classList.remove("animated-dark");
+                h1.classList.add("animated-bright");
+                h2s.forEach(function(h2) {
+                    h2.classList.remove("animated-dark");
+                    h2.classList.add("animated-bright");
+                });
             } else {
                 alert("Invalid theme, please choose between light or dark.");
             }
         }
     </script>
-    <h2 class="name">Carolina Hong</h2>
+    <h2 class="name animated-bright glass">Carolina Hong</h2>
     <p>
         Currently a student at Universidad de los Andes pursuing 
         Civil Engineering in Computer Science.
@@ -47,16 +60,16 @@
         <li>Birth Date: 19 June, 2003</li>
     </ul>
     
-    <h2>Socials</h2>
+    <h2 class="animated-bright glass">Socials</h2>
     <!-- <a href="https://github.com/caroohong">Github</a> -->
-    <button class="github-button pill" id="git" onclick="abrirEnlace('https://github.com/caroohong')">Github</button>
-    <button class="linked-button pill" id = "linked" onclick="abrirEnlace('https://www.linkedin.com/in/carolina-hong-89752129a/')">LinkedIn</button>
+    <button class="social-button pill" id="git" onclick="abrirEnlace('https://github.com/caroohong')">Github</button>
+    <button class="social-button pill" id = "linked" onclick="abrirEnlace('https://www.linkedin.com/in/carolina-hong-89752129a/')">LinkedIn</button>
     <script>
         function abrirEnlace(enlace) {
             window.open(enlace, '_blank');
         }
     </script>
-    <h2>Skills</h2>
+    <h2 class="animated-bright glass">Skills</h2>
     <table id="skill-table">
         <thead>
             <tr>
@@ -99,7 +112,7 @@
             </tr>
         </tbody>
     </table>
-    <h2>Contact</h2>
+    <h2 class="animated-bright glass">Contact</h2>
     <ul>
         <li>caro.hongy@gmail.com</li>
         <li>+569 8236 5327</li>
