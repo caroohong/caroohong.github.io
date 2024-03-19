@@ -9,114 +9,137 @@
     <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:wght@400;700;900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Spectral&display=swap" rel="stylesheet">
+
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="script.js"></script>
 </head>
 <body class="light-mode">
-    <h1 class="about-me animated-bright glass">About Me</h1>
-    <label for="toggle">Chose a theme (light/dark)</label>
-    <input placeholder="Enter theme" class= "light-mode" type="text" id="toggle">
-    <button class="light-dark-button pill" onclick="toggleMode()">Change Theme</button>
-    <script>
-        function toggleMode() {
-            var toggle = document.getElementById("toggle").value.toLowerCase();
-            var body = document.body;
-            var h1 = document.querySelector("h1");
-            var h2s = document.querySelectorAll("h2");
-            var input = document.getElementById("toggle");
-            if (toggle === "dark") {
-                body.classList.remove("light-mode");
-                body.classList.add("dark-mode");
-                input.classList.remove("light-mode");
-                input.classList.add("dark-mode");
-                h1.classList.remove("animated-bright");
-                h1.classList.add("animated-dark");
-                h2s.forEach(function(h2) {
-                    h2.classList.remove("animated-bright");
-                    h2.classList.add("animated-dark");
-                });
-            } else if (toggle === "light") {
-                body.classList.remove("dark-mode");
-                body.classList.add("light-mode");
-                input.classList.remove("dark-mode");
-                input.classList.add("light-mode");
-                h1.classList.remove("animated-dark");
-                h1.classList.add("animated-bright");
-                h2s.forEach(function(h2) {
-                    h2.classList.remove("animated-dark");
-                    h2.classList.add("animated-bright");
-                });
-            } else {
-                alert("Invalid theme, please choose between light or dark.");
-            }
-        }
-    </script>
-    <h2 class="name animated-bright glass">Carolina Hong</h2>
-    <p>
-        Currently a student at Universidad de los Andes pursuing 
-        Civil Engineering in Computer Science.
-    </p>
-    <!-- <img src="images/moon.png" id="icon"> -->
-    <ul>
-        <li>Year of University Enrollment: 2021</li>
-        <li>Birth Date: 19 June, 2003</li>
-    </ul>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <div class="container">
+        <h1 class="about-me animated-bright glass">Carolina Hong</h1>
+        <label for="toggle-input-text">Chose a theme (light/dark)</label>
+        <input placeholder="Enter theme" class= "light-mode" type="text" id="toggle-input-text">
+        <button class="light-dark-button pill" onclick="toggleMode()">Change Theme</button>
+    </div>
     
-    <h2 class="animated-bright glass">Socials</h2>
-    <!-- <a href="https://github.com/caroohong">Github</a> -->
-    <button class="social-button pill" id="git" onclick="abrirEnlace('https://github.com/caroohong')">Github</button>
-    <button class="social-button pill" id = "linked" onclick="abrirEnlace('https://www.linkedin.com/in/carolina-hong-89752129a/')">LinkedIn</button>
-    <script>
-        function abrirEnlace(enlace) {
-            window.open(enlace, '_blank');
-        }
-    </script>
-    <h2 class="animated-bright glass">Skills</h2>
-    <table id="skill-table">
-        <thead>
-            <tr>
-                <th>Skill</th>
-                <th>Level</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Python</td>
-                <td>Expert</td>
-            </tr>
-            <tr>
-                <td>JavaScript</td>
-                <td>Basic</td>
-            </tr>
-            <tr>
-                <td>HTML/CSS</td>
-                <td>Basic</td>
-            </tr>
-            <tr>
-                <td>Excel</td>
-                <td>Advanced</td>
-            </tr>
-            <tr>
-                <td>SQL</td>
-                <td>Expert</td>
-            </tr>
-            <tr>
-                <td>C/C++</td>
-                <td>Advanced</td>
-            </tr>
-            <tr>
-                <td>Word</td>
-                <td>Advanced</td>
-            </tr>
-            <tr>
-                <td>PowerPoint</td>
-                <td>Advanced</td>
-            </tr>
-        </tbody>
-    </table>
-    <h2 class="animated-bright glass">Contact</h2>
-    <ul>
-        <li>caro.hongy@gmail.com</li>
-        <li>+569 8236 5327</li>
-    </ul>
-    <button class="pill about-me-button" onclick="abrirEnlace('https://github.com/caroohong/caroohong.github.io')">Link to this github</button>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 accordion ">
+                <div class="accordion-item">
+                    <h2 class="accordion-header"> 
+                        <button class="accordion-button collapsed animated-bright glass" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
+                            About Me
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
+                        <div class="accordion-body light-mode">
+                            <p>
+                                Currently a student at Universidad de los Andes pursuing 
+                                Civil Engineering in Computer Science.
+                            </p>
+                            <ul>
+                                <li>Year of University Enrollment: 2021</li>
+                                <li>Birth Date: 19 June, 2003</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-sm-6 accordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed animated-bright glass" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                        Socials
+                      </button>
+                    </h2>
+
+                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                        <div class="accordion-body light-mode">
+                            <div id="social-buttons">
+                                <button class="social-button pill" id="git" onclick="abrirEnlace('https://github.com/caroohong')">Github</button>
+                                <button class="social-button pill" id = "linked" onclick="abrirEnlace('https://www.linkedin.com/in/carolina-hong-89752129a/')">LinkedIn</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- <h2 class="animated-bright glass">Socials</h2> -->
+    <div class=" container accordion">
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed animated-bright glass" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                    Skills
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                <div class="accordion-body light-mode">
+                    <table id="skill-table">
+                        <thead>
+                            <tr>
+                                <th>Skill</th>
+                                <th>Level</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Python</td>
+                                <td>Expert</td>
+                            </tr>
+                            <tr>
+                                <td>JavaScript</td>
+                                <td>Basic</td>
+                            </tr>
+                            <tr>
+                                <td>HTML/CSS</td>
+                                <td>Basic</td>
+                            </tr>
+                            <tr>
+                                <td>Excel</td>
+                                <td>Advanced</td>
+                            </tr>
+                            <tr>
+                                <td>SQL</td>
+                                <td>Expert</td>
+                            </tr>
+                            <tr>
+                                <td>C/C++</td>
+                                <td>Advanced</td>
+                            </tr>
+                            <tr>
+                                <td>Word</td>
+                                <td>Advanced</td>
+                            </tr>
+                            <tr>
+                                <td>PowerPoint</td>
+                                <td>Advanced</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- 
+    <div>
+        <h2 class="animated-bright glass">Skills</h2>
+        
+
+    </div> -->
+
+    <div class="container">
+        <h2 class="animated-bright glass" id="contact">Contact</h2>
+        <ul>
+            <li>caro.hongy@gmail.com</li>
+            <li>+569 8236 5327</li>
+        </ul>
+        <button class="pill about-me-button" onclick="abrirEnlace('https://github.com/caroohong/caroohong.github.io')">Link to this github</button>
+    </div>
+    
 </body>
 </html>
