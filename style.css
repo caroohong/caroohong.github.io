@@ -248,3 +248,7 @@ button {
 #skill-table th {
     background-color: rgba(90, 90, 90, 0.342);
 }
+.alert {
+    background: #9292927c;
+    /* --bs-alert-border-color: rgba(80, 80, 80, 0.582); */
+}
