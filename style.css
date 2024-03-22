@@ -5,19 +5,13 @@ body {
     transition: background-color 0.5s ease;
     /* overflow: hidden; */
 }
+/* BOOTSTRAP */
 .accordion-header {
-    /* --bs-accordion-btn-bg: radial-gradient(circle,#f5cd79, #f19066,#e66767,#c44569,#546de5); */
-    --bs-accordion-btn-color: white;
-    --bs-accordion-active-color: white;
-    /* --bs-accordion-active-bg: white; */
     border: none;
 }
-/* .accordion-item {
-    background-color:transparent;
-    box-shadow:none;
-    margin-bottom: 10px;
-} */
 .accordion-button {
+    /* --bs-accordion-btn-icon: white; */
+    background: transparent;
     position: relative;
     outline:none;
     display: flex;
@@ -32,14 +26,30 @@ body {
     text-align: left;
     border: none;
     transition: var(--bs-accordion-transition);
+    box-shadow: none;
 }
 .accordion-button:hover {
     transform: scale(1.02);
     box-shadow: none;
 }
+.accordion-button:focus {
+    box-shadow: none;
+}
 .accordion-button:not(.collapsed) {
+    color:white;
     box-shadow:none;
     border-color: rgba(0,0,0,0.125)
+}
+.accordion-button:not(.collapsed)::after {
+    box-shadow: none;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+.accordion-button::after {
+    box-shadow: none;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+.alert {
+    background: rgba(129, 129, 129, 0.274);
 }
 #contact {
     font-size:25px;
@@ -187,7 +197,7 @@ button {
 #toggle-input-text {
     /* padding-left:6px; */
     width: 120px;
-    text-align: center;
+    /* text-align: center; */
     -webkit-box-align: center;
     align-items: center;
     -webkit-box-pack: justify;
