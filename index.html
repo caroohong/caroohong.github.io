@@ -20,14 +20,27 @@
         <h1 class="about-me animated-bright glass">Carolina Hong</h1>
         <label for="toggle-input-text">Chose a theme (light/dark)</label>
         <input placeholder="Enter theme" class= "light-mode" type="text" id="toggle-input-text">
-        <button class="light-dark-button pill" onclick="toggleMode()">Change Theme</button>
+        <button type="button" id="liveToastBtn" class="light-dark-button pill btn btn-primary" onclick="toggleMode()">Change Theme</button>
+        <!-- TOAST -->
+        <div class="toast-container position-fixed bottom-0 end-0 p-3">
+            <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+              <div class="toast-header light-mode">
+                <strong class="me-auto">Theme</strong>
+                <small>now</small>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+              </div>
+              <div class="toast-body light-mode">
+                Theme changed succesfully
+              </div>
+            </div>
+          </div>
     </div>
     
     <div class="container">
         <div class="row">
             <div class="col-sm-6 accordion ">
-                <div class="accordion-item">
-                    <h2 class="accordion-header"> 
+                <div class="accordion-header">
+                    <!-- <h2 class="accordion-header">  -->
                         <button class="accordion-button collapsed animated-bright glass" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
                             About Me
                         </button>
@@ -48,8 +61,8 @@
                 
             </div>
             <div class="col-sm-6 accordion">
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
+                <div class="accordion-header">
+                    <!-- <h2 class="accordion-header"> -->
                       <button class="accordion-button collapsed animated-bright glass" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
                         Socials
                       </button>
@@ -67,11 +80,11 @@
             </div>
         </div>
     </div>
-    
+    <p></p>
     <!-- <h2 class="animated-bright glass">Socials</h2> -->
     <div class=" container accordion">
-        <div class="accordion-item">
-            <h2 class="accordion-header">
+        <div class="accordion-header">
+            <!-- <h2 class="accordion-header"> -->
                 <button class="accordion-button collapsed animated-bright glass" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
                     Skills
                 </button>
