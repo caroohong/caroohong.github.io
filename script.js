@@ -34,15 +34,21 @@ function toggleMode() {
     } else if (toggle === "light") {
         body.classList.remove("dark-mode");
         body.classList.add("light-mode");
-        accordion_body.classList.remove("dark-mode");
-        accordion_body.classList.add("light-mode");
         input.classList.remove("dark-mode");
         input.classList.add("light-mode");
 
         h1.classList.remove("animated-dark");
         h1.classList.add("animated-bright");
-        accordion_button.classList.remove("animated-dark");
-        accordion_button.classList.add("animated-bright");
+        
+        accordion_body.forEach(function(abody)
+        {
+            abody.classList.remove("dark-mode");
+            abody.classList.add("light-mode");
+        })
+        accordion_button.forEach(function(abutton){
+            abutton.classList.remove("animated-dark");
+            abutton.classList.add("animated-bright");
+        })
         h2s.forEach(function(h2) {
             h2.classList.remove("animated-dark");
             h2.classList.add("animated-bright");
